@@ -14,11 +14,7 @@ distAU=spiceypy.convrt(dist,'km','AU')
 print("Distance from sun to earth in AU: ", distAU)
 orbit_speed= math.sqrt(earth_wrt_sun[3]**2 + earth_wrt_sun[4]**2 + earth_wrt_sun[5]**2)
 print("Orbital speed: ", orbit_speed)
-gm_sun = spiceypy.bodvcd(bodyid=10,item='GM',maxn=1)
-print(gm_sun)
-#gm=gm_sun[0]*gm_sum[1]
-#orbit_speed2=math.sqrt(gm/dist)
-#print("Checking if kernal info was right: ",orbit_speed2)
+
 
     
 
